@@ -1,0 +1,18 @@
+---
+- hosts: all
+  connection: local
+
+  roles:
+  # use ansible-galaxy to setup homebrew
+    - role: geerlingguy.homebrew
+      tags: ['homebrew']
+
+  tasks:
+    - include_tasks: tasks/tools.yml
+      tags: ['tools']
+
+    - include_tasks: tasks/dev-tools.yml
+      tags: ['devtools']
+
+    - include_tasks: tasks/dev-env.yml
+      tags: ['devenv']      

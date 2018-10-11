@@ -1,0 +1,11 @@
+---
+- name: install google chrome
+  homebrew_cask: name=google-chrome state=present
+- name: install franz
+  homebrew_cask: name=franz state=present
+- name: install office
+  homebrew_cask: name=microsoft-office state=present
+- name: install tunnelblick
+  homebrew_cask: name=tunnelblick state=present
+
+

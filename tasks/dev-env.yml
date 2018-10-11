@@ -1,0 +1,6 @@
+---
+- name: install latest java
+  homebrew_cask: name=java state=present
+- name: install node
+  homebrew_cask: name=node state=present
+
