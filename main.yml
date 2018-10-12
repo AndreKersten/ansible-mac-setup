@@ -2,10 +2,16 @@
 - hosts: all
   connection: local
 
+  vars_files:
+    - config.yml
+
   roles:
   # use ansible-galaxy to setup homebrew
     - role: geerlingguy.homebrew
       tags: ['homebrew']
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles']      
 
   tasks:
     - include_tasks: tasks/tools.yml

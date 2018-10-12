@@ -1,0 +1,10 @@
+configure_dotfiles: yes
+
+dotfiles_repo: git@github.com:AndreKersten/mac-dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/Documents/config/dotfiles
+dotfiles_home: "~"
+dotfiles_files:
+  - .bash_profile
+  - .gitignore
+  - .gitconfig

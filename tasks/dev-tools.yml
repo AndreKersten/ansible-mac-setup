@@ -9,3 +9,5 @@
   homebrew_cask: name=sequel-pro state=present
 - name: install gimp
   homebrew_cask: name=gimp state=present
+- name: install terraform
+  homebrew: name=terraform state=present
