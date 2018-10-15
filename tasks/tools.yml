@@ -7,5 +7,6 @@
   homebrew_cask: name=microsoft-office state=present
 - name: install tunnelblick
   homebrew_cask: name=tunnelblick state=present
-
+- name: install pgp / gpg tools
+  homebrew: name=gpg state=present
 

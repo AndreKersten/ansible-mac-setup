@@ -3,4 +3,9 @@
   homebrew_cask: name=java state=present
 - name: install node
   homebrew_cask: name=node state=present
+- name: install aws cli
+  homebrew: name=awscli state=present
+# pip with python3 required e. g. run alias pip=pip3 in terminal
+- name: install sam local
+  pip: name=aws-sam-cli state=present
 
