@@ -5,7 +5,11 @@
   homebrew_cask: name=node state=present
 - name: install aws cli
   homebrew: name=awscli state=present
+- name: install iterm2 terminal replacement
+  homebrew_cask: name=iterm2 state=present
 # pip with python3 required e. g. run alias pip=pip3 in terminal
-- name: install sam local
-  pip: name=aws-sam-cli state=present
+#- name: install sam local
+#  pip: name=aws-sam-cli state=present
+- name: install telnet
+  homebrew: name=telnet state=present
 

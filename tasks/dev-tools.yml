@@ -11,3 +11,5 @@
   homebrew_cask: name=gimp state=present
 - name: install terraform
   homebrew: name=terraform state=present
+- name: install docker
+  homebrew_cask: name=docker state=present

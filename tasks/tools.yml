@@ -9,4 +9,6 @@
   homebrew_cask: name=tunnelblick state=present
 - name: install pgp / gpg tools
   homebrew: name=gpg state=present
+- name: install adobe reader
+  homebrew_cask: name=adobe-acrobat-reader state=present
 
