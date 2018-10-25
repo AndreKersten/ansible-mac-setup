@@ -11,4 +11,6 @@
   homebrew: name=gpg state=present
 - name: install adobe reader
   homebrew_cask: name=adobe-acrobat-reader state=present
+- name: install google file stream
+  homebrew_cask: name=google-drive-file-stream state=present
 

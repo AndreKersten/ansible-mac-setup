@@ -1,4 +1,4 @@
-configure_dotfiles: yes
+configure_dotfiles: no
 
 dotfiles_repo: git@github.com:AndreKersten/mac-dotfiles.git
 dotfiles_repo_accept_hostkey: yes

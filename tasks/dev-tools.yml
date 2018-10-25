@@ -13,3 +13,5 @@
   homebrew: name=terraform state=present
 - name: install docker
   homebrew_cask: name=docker state=present
+- name: install adr-tools (architecture decision record)
+  homebrew: name=adr-tools state=present
