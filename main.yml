@@ -7,6 +7,7 @@
 
   roles:
   # use ansible-galaxy to setup homebrew
+    - role: elliotweiser.osx-command-line-tools
     - role: geerlingguy.homebrew
       tags: ['homebrew']
     - role: geerlingguy.dotfiles
