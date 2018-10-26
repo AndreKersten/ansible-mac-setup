@@ -15,3 +15,5 @@
   homebrew_cask: name=docker state=present
 - name: install adr-tools (architecture decision record)
   homebrew: name=adr-tools state=present
+- name: install keybase tools 
+  homebrew_cask: name=keybase state=present
